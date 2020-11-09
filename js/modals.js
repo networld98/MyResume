@@ -2,6 +2,7 @@ const mobileMenuBtn = document.querySelector('#mobile-menu-btn');
 const myVideoBtn = document.querySelector('#my-video-btn');
 
 const myVideoModal = document.querySelector('#my-video-modal');
+const ThanksModal = document.querySelector('#thanks-modal');
 const mobileMenu = document.querySelector('#mobile-menu');
 
 const modalCloseBtns = document.querySelectorAll('.modal-close-btn');
@@ -15,7 +16,7 @@ const BODY_SCROLL_DISABLE_CLASS = 'body-scroll-disable';
 enableCloseModalOnBgdClick();
 hideModalOnMobileMenuElementsClick();
 
-const modals = [mobileMenu, myVideoModal];
+const modals = [mobileMenu, myVideoModal, ThanksModal];
 const buttons = [mobileMenuBtn, myVideoBtn];
 
 buttons.forEach((btn, index) => {
