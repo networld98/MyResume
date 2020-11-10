@@ -221,6 +221,7 @@ img {
     background: var(--c-light);
     color: var(--c-dark);
     padding: 10px 14px;
+    z-index: 10;
 }
 .my-video-content{
     width: 100%;
@@ -265,6 +266,9 @@ img {
     line-height: 25px;
     text-align: center;
     color: var(--txt-c-black);
+}
+.thanks-modal-close-btn {
+    padding: 5px;
 }
 
 /* PROJECT MODAL */
@@ -689,6 +693,9 @@ img {
     text-align: center;
     color: var(--c-grey-blue);
     margin-bottom: 30px;
+}
+.callback-form-error {
+    border: 1px solid red;
 }
 
 /* CALCULATOR FORM SECTION */

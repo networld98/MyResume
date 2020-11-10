@@ -202,11 +202,7 @@
                     <div class="projet-item-dot"></div>
                     <div class="projet-item-dot"></div>
                 </div>
-                <img
-                        src="img/projects/team/questify.jpg"
-                        alt="quetify app"
-                        class="personal-project-img"
-                />
+                <img src="img/projects/team/questify.jpg" alt="quetify app" class="personal-project-img"/>
             </div>
             <p class="team-project-name">
                 <i class="fas fa-laptop-code personal-project-icon"></i>
@@ -221,11 +217,7 @@
                     <div class="projet-item-dot"></div>
                     <div class="projet-item-dot"></div>
                 </div>
-                <img
-                        src="img/projects/team/it-test.jpg"
-                        alt="it test app"
-                        class="personal-project-img"
-                />
+                <img src="img/projects/team/it-test.jpg" alt="it test app" class="personal-project-img"/>
             </div>
             <p class="team-project-name">
                 <i class="fas fa-laptop-code personal-project-icon"></i>
@@ -240,9 +232,9 @@
         <form action="" class="callback-form-container">
             <h3 class="callback-form-title">/Are you minding [a project?]</h3>
             <p class="callback-form-description">Leave a request to discuss the task and technical requirements</p>
-            <input type="text" class="callback-form-input" placeholder="Name">
-            <input type="email" class="callback-form-input" placeholder="Email">
-            <input type="tel" class="callback-form-input" placeholder="Phone" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}">
+            <input type="text" class="callback-form-input" id="callback-form-input-name" placeholder="Name">
+            <input type="email" class="callback-form-input" id="callback-form-input-email" placeholder="Email">
+            <input type="tel" class="callback-form-input" id="callback-form-input-phone" placeholder="+38(___) ___-__-__ " pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}">
             <input type="submit" class="callback-form-submit accent-btn" value="Discuss the project —">
         </form>
     </div>
@@ -342,12 +334,14 @@
             </div>
         </div>
     </div>
+    <!-- VIDEO MODAL-->
     <div class="modal modal-area-bgd" id="my-video-modal">
-        <div class="my-video-container modal-area-content">
+        <div class="my-video-container">
             <i class="fas fa-times modal-close-btn my-video-close-btn"></i>
             <video src="uploads/video.mp4" class="my-video-content" controls></video>
         </div>
     </div>
+    <!-- THANKS MODAL-->
     <div class="modal modal-area-bgd thanks-modal" id="thanks-modal">
         <div class="thanks-modal-container modal-area-content">
             <i class="fas fa-times modal-close-btn thanks-modal-close-btn"></i>
@@ -477,5 +471,6 @@
 <script src="js/calculator.js"></script>
 <script src="js/project-modals.js"></script>
 <script src="js/modals.js"></script>
+<script src="js/callback-form.js"></script>
 </body>
 </html>
