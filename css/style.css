@@ -734,6 +734,7 @@ img {
     text-transform: uppercase;
     color: var(--txt-c-light);
     margin: 0 0 30px 0;
+    width: 276px;
 }
 .calculator-descr span {
     background: var(--c-accent);
@@ -1022,5 +1023,90 @@ img {
         font-size: 200px;
         line-height: 240px;
         top: 19px;
+    }
+    .callback-form-container {
+        padding: 75px 30px 80px;
+    }
+    .callback-form-title {
+        width: 386px;
+        font-size: 36px;
+        line-height: 43px;
+    }
+    .callback-form-submit,
+    .callback-form-input,
+    .callback-form-description {
+        width: 386px;
+        box-sizing: border-box;
+    }
+    .callback-form-submit{
+        margin-top: 10px;
+    }
+    .calculator .container {
+        align-items: normal;
+        position: relative;
+        padding: 20px 10px 90px;
+        margin-bottom: 0;
+    }
+    .calculator-title {
+        width: 605px;
+        text-align: left;
+        font-size: 50px;
+        line-height: 60px;
+        margin-bottom: 40px;
+    }
+    .calculator-descr {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        width: auto;
+        font-size: 36px;
+        line-height: 150%;
+    }
+    .calculator-icon {
+        position: absolute;
+        right:10px;
+        top:405px;
+        width: 344px;
+        z-index: 1;
+    }
+    .calculator-text {
+        margin-top: 10px;
+        text-align: left;
+        width: 330px;
+    }
+    .calculator-form{
+        position: relative;
+        z-index: 2;
+        padding: 60px 80px 70px;
+    }
+    .calculator-form-title{
+        line-height: 150%;
+    }
+    .footer{
+        padding: 39px 15px 61px;
+    }
+    .footer-container {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .footer-left-container {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .footer-profession {
+        font-size: 17px;
+        line-height: 150%;
+        text-align: center;
+        color: var(--txt-c-dark);
+        margin: 0 0 19px;
+    }
+    .footer-email{
+        margin-bottom: 0;
+    }
+    .footer-social {
+        justify-content: left;
     }
 }
