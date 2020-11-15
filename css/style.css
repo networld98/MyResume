@@ -1139,6 +1139,7 @@ img {
     .front-page-desktop-menu {
         display: flex;
         flex-direction: row;
+        margin: 0;
     }
     .front-page-desktop-menu li {
         display: flex;
