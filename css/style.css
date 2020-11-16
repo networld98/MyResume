@@ -34,6 +34,7 @@
     /* animation */
     --animation-fast: 0.1s;
     --animation-slow: 0.3s;
+    --animation-transition: all 0.2s ease-in-out;
   }
   
   @font-face {
@@ -105,8 +106,13 @@ img {
     cursor: pointer;
     text-decoration: none;
 }
+.accent-btn:hover{
+    outline: 1px solid var(--c-accent);
+    color: var(--txt-c-accent);
+    background: transparent;
+    transition: var(--animation-transition);
+}
 .container {
-    min-width: 320px;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -195,6 +201,11 @@ img {
     text-decoration: none;
     text-align: center;
     margin-bottom: 35px;
+    transition: var(--animation-transition);
+}
+.mobile-menu-item:hover {
+    color: var(--txt-c-accent);
+    font-weight: bold;
 }
 .mobile-menu-my-tel {
     display: block;
@@ -347,6 +358,12 @@ img {
     flex-direction: column;
     align-items: center;
 }
+.logo-link {
+    transition: var(--animation-transition);
+}
+.logo-link:hover {
+    transform: scale(1.1);
+}
 .front-page-main-info {
     flex-direction: column;
     display: flex;
@@ -409,6 +426,10 @@ img {
     color: var(--txt-c-accent);
     text-decoration: none;
     margin-right: 20px;
+    transition: var(--animation-transition);
+}
+.navigation-part:hover {
+    transform: scale(1.1);
 }
 .mobile-menu{
     text-decoration: none;
@@ -450,6 +471,11 @@ img {
     align-items: center;
     margin-bottom: 23px;
     cursor:pointer;
+}
+.front-page-may-video-btn:hover{
+    color: var(--txt-c-light);
+    background: var(--c-accent);
+    transition: var(--animation-transition);
 }
 .front-page-may-video-btn .fa-play{
     font-size: 9px;
@@ -941,7 +967,6 @@ img {
 @media only screen and (min-width: 640px) {
     .container{
         margin-bottom: 55px;
-        min-width: 640px;
     }
     .mobile-element {
         display: none;
@@ -1176,6 +1201,7 @@ img {
     }
     .front-page-desktop-menu li a:hover {
         color: var(--txt-c-accent);
+        transition: var(--animation-transition);
     }
     .front-page-profession {
         font-size: 70px;
