@@ -81,12 +81,14 @@ body{
 img {
     width: 100%;
 }
-
+.desktop-element {
+    display: none;
+}
 .tablet-element {
     display: none;
 }
-.desktop-element {
-    display: none;
+.mobile-element {
+    display: block;
 }
 
 .accent-btn{
@@ -139,6 +141,7 @@ img {
     pointer-events: none;
     display: block;
     background: var(--modal-bgd-dark);
+    z-index: 999;
 }
 .modal-active {
     opacity: 1;
@@ -446,6 +449,7 @@ img {
     display: flex;
     align-items: center;
     margin-bottom: 23px;
+    cursor:pointer;
 }
 .front-page-may-video-btn .fa-play{
     font-size: 9px;
@@ -696,7 +700,11 @@ img {
     width: 100%;
     box-sizing: border-box;
 }
-
+.callback-form-input-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 .callback-form-title {
     width: 260px;
     font-weight: bold;
@@ -734,8 +742,13 @@ img {
 .calculator {
     background: var(--c-dark);
 }
-.calculator .container{
+.calculator .container {
     padding-bottom: 75px;
+}
+.calculator-content-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 .calculator-icon {
     width: 195px;
@@ -806,6 +819,7 @@ img {
 }
 .calculator-form-input-field {
     margin-right: 10px;
+    cursor: pointer;
 }
 .calculator-form-total-cost {
     font-weight: bold;
@@ -960,6 +974,8 @@ img {
     .front-page-gallery-btn {
         width: 400px;
         margin-bottom: 55px;
+        text-align: center;
+        box-sizing: border-box;
     }
     .my-front-page-my-info {
         display: flex;
@@ -1061,6 +1077,9 @@ img {
         position: relative;
         padding: 20px 10px 90px;
         margin-bottom: 0;
+    }
+    .calculator-content-info {
+        align-items: flex-start;
     }
     .calculator-title {
         width: 605px;
@@ -1170,6 +1189,7 @@ img {
         order: 2;
         z-index: 2;
         position: relative;
+        width: 387px;
     }
     .front-page-my-photo {
         position: absolute;
@@ -1220,6 +1240,81 @@ img {
         text-align: left;
     }
 
+    /*about-me*/
+
+    .about-title {
+        font-size: 70px;
+        line-height: 84px;
+        width: 620px;
+        margin-top: 0;
+    }
+
+    .about-text {
+        width: 406px;
+    }
+    .about-text:last-child {
+        width: 388px;
+        margin: 0;
+    }
+
+    .about-content-wrapper {
+        position: relative;
+    }
+
+    .about .container {
+        flex-direction: row;
+        padding: 135px 10px;
+        justify-content: space-between;
+    }
+
+    .about-projects-bar {
+        background: var(--c-accent);
+        width: 159px;
+        height: 465px;
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+        padding: 10px 5px;
+        margin-bottom: 35px;
+        margin-top: 15px;
+    }
+
+    .about-projects {
+        z-index: 2;
+    }
+
+    .about-projects-count {
+        font-weight: bold;
+        font-size: 65px;
+        line-height: 78px;
+        color: var(--txt-c-light);
+        margin: 0;
+    }
+
+    .about-projects-text {
+        font-weight: bold;
+        font-size: 15px;
+        line-height: 135%;
+        color: var(--txt-c-dark);
+        text-transform: uppercase;
+        width: 125px;
+    }
+
+    .about-img-text {
+        font-size: 250px;
+        line-height: 300px;
+        right: -223px;
+        top: -23px;
+        z-index: 1;
+    }
+
+    .about-img {
+        width: 421px;
+        height: 455px;
+        left: -35px;
+    }
+
+
     /* Galleries */
 
     .team-project-item-wrapper,
@@ -1250,5 +1345,82 @@ img {
         line-height: 300px;
         top: 35px;
         left: 274px;
+    }
+    .callback-form-input-container {
+        flex-direction: row;
+        width: 100%;
+        justify-content: center;
+    }
+    .callback-form-title, .callback-form-description {
+        width: 100%;
+    }
+    .callback-form-description {
+        margin-bottom: 50px;
+    }
+    .callback-form-input {
+        width: 30%;
+        margin-right: 40px;
+        max-width: 260px;
+    }
+    .callback-form-input:last-child {
+        margin-right: 0;
+    }
+    .callback-form-submit {
+        padding: 15px 20px;
+        width: 265px ;
+    }
+    .calculator .container {
+       flex-direction: row;
+        justify-content: space-between;
+        padding: 150px 10px;
+    }
+    .calculator-content-info {
+        position: relative;
+        width: calc(100% - 386px - 20px);
+        box-sizing: border-box;
+    }
+    .calculator-form {
+        width: 386px;
+        padding: 40px 53px 59px;
+        box-sizing: border-box;
+    }
+    .calculator-title {
+        margin-top: 0;
+        font-size: 70px;
+        line-height: 84px;
+        width: 100%;
+        margin-bottom: 60px;
+    }
+    .calculator-descr{
+        z-index: 2;
+    }
+    .calculator-text {
+        margin-top: 30px;
+        width: 348px;
+        z-index: 2;
+    }
+    .footer .container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .footer-container{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: calc(50% + 100px);
+    }
+    .footer-profession {
+        margin-bottom: 0;
+    }
+    .thanks-modal-container{
+        padding: 65px 126px 75px;
+        box-sizing: border-box;
+        max-width: 605px;
+    }
+    .project-modal-container {
+        padding: 95px;
+        box-sizing: border-box;
+        max-width: 963px;
     }
 }
